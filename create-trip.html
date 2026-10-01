@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Triply - Create Trip</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="create-trip.css">
+</head>
+
+<body>
+
+<div class="app-container">
+
+    <!-- Header -->
+
+    <header class="top-header">
+
+        <button class="back-btn" id="backBtn">
+            <i class="fa-solid fa-arrow-left"></i>
+        </button>
+
+        <h1>Create trip</h1>
+
+        <div class="header-space"></div>
+
+    </header>
+
+
+    <!-- Main -->
+
+    <main class="content">
+
+        <!-- Intro -->
+
+        <section class="intro">
+
+            <span class="step-label">
+                PLAN YOUR JOURNEY
+            </span>
+
+            <h2>Let's plan your next adventure.</h2>
+
+            <p>
+                Add a few details and Triply will help you
+                organize your journey.
+            </p>
+
+        </section>
+
+
+        <!-- Form -->
+
+        <form id="tripForm">
+
+
+            <!-- Trip Name -->
+
+            <div class="form-group">
+
+                <label for="tripName">
+                    Trip name
+                </label>
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-suitcase-rolling"></i>
+
+                    <input
+                        type="text"
+                        id="tripName"
+                        placeholder="e.g. Munnar Escape"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- Destination -->
+
+            <div class="form-group">
+
+                <label for="destination">
+                    Destination
+                </label>
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <input
+                        type="text"
+                        id="destination"
+                        value="Munnar, Kerala"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- Dates -->
+
+            <div class="date-row">
+
+                <div class="form-group">
+
+                    <label for="startDate">
+                        Start date
+                    </label>
+
+                    <div class="input-box">
+
+                        <i class="fa-regular fa-calendar"></i>
+
+                        <input
+                            type="date"
+                            id="startDate"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="endDate">
+                        End date
+                    </label>
+
+                    <div class="input-box">
+
+                        <i class="fa-regular fa-calendar"></i>
+
+                        <input
+                            type="date"
+                            id="endDate"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Travellers -->
+
+            <div class="form-group">
+
+                <label>
+                    Travellers
+                </label>
+
+                <div class="traveller-box">
+
+                    <div class="traveller-info">
+
+                        <div class="traveller-icon">
+                            <i class="fa-solid fa-user-group"></i>
+                        </div>
+
+                        <div>
+
+                            <strong>Number of travellers</strong>
+
+                            <span>Who's joining the trip?</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="counter">
+
+                        <button
+                            type="button"
+                            id="minusBtn"
+                        >
+                            <i class="fa-solid fa-minus"></i>
+                        </button>
+
+                        <span id="travellerCount">
+                            2
+                        </span>
+
+                        <button
+                            type="button"
+                            id="plusBtn"
+                        >
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Travel Style -->
+
+            <div class="form-group">
+
+                <label>
+                    Travel style
+                </label>
+
+                <div class="style-grid">
+
+                    <button
+                        type="button"
+                        class="style-option active"
+                        data-style="Relaxed"
+                    >
+                        <i class="fa-solid fa-mug-hot"></i>
+                        <span>Relaxed</span>
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="style-option"
+                        data-style="Adventure"
+                    >
+                        <i class="fa-solid fa-person-hiking"></i>
+                        <span>Adventure</span>
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="style-option"
+                        data-style="Cultural"
+                    >
+                        <i class="fa-solid fa-landmark"></i>
+                        <span>Cultural</span>
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="style-option"
+                        data-style="Luxury"
+                    >
+                        <i class="fa-solid fa-gem"></i>
+                        <span>Luxury</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Notes -->
+
+            <div class="form-group">
+
+                <label for="notes">
+                    Anything else?
+                    <span>Optional</span>
+                </label>
+
+                <textarea
+                    id="notes"
+                    placeholder="Add preferences or places you'd like to visit..."
+                ></textarea>
+
+            </div>
+
+
+            <!-- Submit -->
+
+            <button
+                type="submit"
+                class="create-btn"
+            >
+
+                Create my trip
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+        </form>
+
+    </main>
+
+</div>
+
+
+<script src="create-trip.js"></script>
+
+</body>
+</html>

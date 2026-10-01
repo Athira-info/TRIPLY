@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Triply - Explore</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="explore.css">
+</head>
+
+<body>
+
+    <div class="app-container">
+
+        <!-- Header -->
+        <header class="top-header">
+
+            <button class="icon-btn back-btn" id="backBtn">
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+
+            <h1>Explore</h1>
+
+            <button class="icon-btn">
+                <i class="fa-regular fa-bell"></i>
+            </button>
+
+        </header>
+
+
+        <!-- Search -->
+        <section class="search-section">
+
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search destinations..."
+                >
+
+                <button class="search-clear" id="clearSearch">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+        </section>
+
+
+        <!-- Categories -->
+        <section class="category-section">
+
+            <div class="section-heading">
+                <h2>Discover places</h2>
+            </div>
+
+            <div class="category-scroll">
+
+                <button class="category-chip active" data-category="all">
+                    All
+                </button>
+
+                <button class="category-chip" data-category="beach">
+                    <i class="fa-solid fa-umbrella-beach"></i>
+                    Beach
+                </button>
+
+                <button class="category-chip" data-category="mountains">
+                    <i class="fa-solid fa-mountain"></i>
+                    Mountains
+                </button>
+
+                <button class="category-chip" data-category="city">
+                    <i class="fa-solid fa-city"></i>
+                    City
+                </button>
+
+                <button class="category-chip" data-category="adventure">
+                    <i class="fa-solid fa-person-hiking"></i>
+                    Adventure
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Filter -->
+        <section class="filter-section">
+
+            <button class="filter-btn" id="filterBtn">
+                <i class="fa-solid fa-sliders"></i>
+                Filters
+            </button>
+
+            <button class="sort-btn" id="sortBtn">
+                <span>Popular</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+
+        </section>
+
+
+        <!-- Destinations -->
+        <main class="destination-section">
+
+            <div class="results-heading">
+                <h2>Popular destinations</h2>
+                <span id="resultCount">8 places</span>
+            </div>
+
+            <div class="destination-grid" id="destinationGrid">
+
+                <!-- Cards generated using JavaScript -->
+
+            </div>
+
+            <!-- Empty State -->
+            <div class="empty-state" id="emptyState">
+
+                <div class="empty-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+
+                <h3>No destinations found</h3>
+
+                <p>
+                    Try searching for another destination
+                    or choose a different category.
+                </p>
+
+                <button id="resetSearch">
+                    Explore all destinations
+                </button>
+
+            </div>
+
+        </main>
+
+
+        <!-- Filter Panel -->
+        <div class="filter-overlay" id="filterOverlay">
+
+            <div class="filter-panel">
+
+                <div class="panel-header">
+
+                    <h3>Filters</h3>
+
+                    <button id="closeFilter">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+
+                </div>
+
+
+                <div class="filter-group">
+
+                    <h4>Travel type</h4>
+
+                    <div class="filter-options">
+
+                        <button class="filter-option active">
+                            All
+                        </button>
+
+                        <button class="filter-option">
+                            Relaxing
+                        </button>
+
+                        <button class="filter-option">
+                            Adventure
+                        </button>
+
+                        <button class="filter-option">
+                            Cultural
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="filter-group">
+
+                    <h4>Rating</h4>
+
+                    <div class="rating-options">
+
+                        <button class="rating-option">
+                            <i class="fa-solid fa-star"></i>
+                            4.5+
+                        </button>
+
+                        <button class="rating-option">
+                            <i class="fa-solid fa-star"></i>
+                            4.0+
+                        </button>
+
+                        <button class="rating-option">
+                            <i class="fa-solid fa-star"></i>
+                            3.5+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <button class="apply-filter" id="applyFilter">
+                    Apply filters
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Bottom Navigation -->
+   <nav class="bottom-nav">
+
+    <a href="index.html" class="nav-item">
+        <i class="fa-solid fa-house"></i>
+        <span>Home</span>
+    </a>
+
+    <a href="explore.html" class="nav-item active">
+        <i class="fa-solid fa-compass"></i>
+        <span>Explore</span>
+    </a>
+
+    <a href="my-trips.html" class="nav-item">
+        <i class="fa-solid fa-suitcase-rolling"></i>
+        <span>Trips</span>
+    </a>
+
+    <a href="saved.html" class="nav-item">
+        <i class="fa-regular fa-heart"></i>
+        <span>Saved</span>
+    </a>
+
+    <a href="profile.html" class="nav-item">
+        <i class="fa-solid fa-user"></i>
+        <span>Profile</span>
+    </a>
+
+</nav>
+
+    </div>
+
+
+    <script src="explore.js"></script>
+
+</body>
+</html>
