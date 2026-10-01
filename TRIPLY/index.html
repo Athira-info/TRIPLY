@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Triply | Travel Planner</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <div class="brand">
+            <div class="brand-logo">
+                <i class="fa-solid fa-paper-plane"></i>
+            </div>
+
+            <span>triply</span>
+        </div>
+
+        <div class="header-right">
+
+            <button class="notification-btn">
+                <i class="fa-regular fa-bell"></i>
+                <span></span>
+            </button>
+
+            <div class="avatar">
+                AR
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- MAIN -->
+    <main class="content">
+
+        <!-- GREETING -->
+        <section class="welcome">
+
+            <p class="welcome-small">
+                Good morning, Aira 👋
+            </p>
+
+            <h1>
+                Where will you<br>
+                <span>go next?</span>
+            </h1>
+
+        </section>
+
+
+        <!-- SEARCH -->
+        <section class="search-wrapper">
+
+            <div class="search-box">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search destinations..."
+                >
+
+                <button class="filter-btn">
+                    <i class="fa-solid fa-sliders"></i>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- CATEGORIES -->
+        <section class="section">
+
+            <div class="section-title">
+                <h2>Explore</h2>
+
+                <button>
+                    See all
+                </button>
+            </div>
+
+
+            <div class="categories">
+
+                <button class="category active">
+
+                    <div class="category-icon">
+                        <i class="fa-solid fa-umbrella-beach"></i>
+                    </div>
+
+                    <span>Beach</span>
+
+                </button>
+
+
+                <button class="category">
+
+                    <div class="category-icon">
+                        <i class="fa-solid fa-mountain-sun"></i>
+                    </div>
+
+                    <span>Mountains</span>
+
+                </button>
+
+
+                <button class="category">
+
+                    <div class="category-icon">
+                        <i class="fa-solid fa-city"></i>
+                    </div>
+
+                    <span>City</span>
+
+                </button>
+
+
+                <button class="category">
+
+                    <div class="category-icon">
+                        <i class="fa-solid fa-person-hiking"></i>
+                    </div>
+
+                    <span>Adventure</span>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- FEATURED -->
+        <section class="section">
+
+            <div class="section-title">
+
+                <h2>Popular destination</h2>
+
+                <button>
+                    See all
+                </button>
+
+            </div>
+
+
+            <article class="featured-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=format&fit=crop&w=1000&q=85"
+                    alt="Munnar mountains"
+                >
+
+
+                <div class="featured-overlay"></div>
+
+
+                <button class="heart-btn">
+
+                    <i class="fa-regular fa-heart"></i>
+
+                </button>
+
+
+                <div class="featured-content">
+
+                    <div class="rating">
+
+                        <i class="fa-solid fa-star"></i>
+
+                        <span>4.8</span>
+
+                    </div>
+
+
+                    <h3>Munnar</h3>
+
+                    <p>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Kerala, India
+                    </p>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- RECOMMENDED -->
+        <section class="section recommended-section">
+
+            <div class="section-title">
+
+                <div>
+                    <h2>Recommended</h2>
+
+                    <p>Places you might love</p>
+                </div>
+
+                <button>
+                    See all
+                </button>
+
+            </div>
+
+
+            <div class="recommended-scroll">
+
+
+                <!-- BALI -->
+                <article class="recommended-card">
+
+                    <div class="recommended-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=600&q=85"
+                            alt="Bali"
+                        >
+
+                        <button class="mini-heart">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                    </div>
+
+
+                    <div class="recommended-content">
+
+                        <h3>Bali</h3>
+
+                        <p>Indonesia</p>
+
+                        <div class="card-bottom">
+
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                4.9
+                            </span>
+
+                            <strong>
+                                ₹18,999
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- DUBAI -->
+                <article class="recommended-card">
+
+                    <div class="recommended-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=600&q=85"
+                            alt="Dubai"
+                        >
+
+                        <button class="mini-heart">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                    </div>
+
+
+                    <div class="recommended-content">
+
+                        <h3>Dubai</h3>
+
+                        <p>United Arab Emirates</p>
+
+                        <div class="card-bottom">
+
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                4.7
+                            </span>
+
+                            <strong>
+                                ₹22,499
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PARIS -->
+                <article class="recommended-card">
+
+                    <div class="recommended-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=600&q=85"
+                            alt="Paris"
+                        >
+
+                        <button class="mini-heart">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                    </div>
+
+
+                    <div class="recommended-content">
+
+                        <h3>Paris</h3>
+
+                        <p>France</p>
+
+                        <div class="card-bottom">
+
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                4.8
+                            </span>
+
+                            <strong>
+                                ₹35,999
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- BOTTOM NAVIGATION -->
+    <nav class="bottom-nav">
+
+    <a href="index.html" class="nav-item active">
+        <i class="fa-solid fa-house"></i>
+        <span>Home</span>
+    </a>
+
+    <a href="explore.html" class="nav-item">
+        <i class="fa-solid fa-compass"></i>
+        <span>Explore</span>
+    </a>
+
+    <a href="my-trips.html" class="nav-item">
+        <i class="fa-solid fa-suitcase-rolling"></i>
+        <span>Trips</span>
+    </a>
+
+    <a href="saved.html" class="nav-item">
+        <i class="fa-regular fa-heart"></i>
+        <span>Saved</span>
+    </a>
+
+    <a href="profile.html" class="nav-item">
+        <i class="fa-solid fa-user"></i>
+        <span>Profile</span>
+    </a>
+
+</nav>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

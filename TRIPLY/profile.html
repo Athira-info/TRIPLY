@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Profile | Triply</title>
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
+
+    <!-- Profile CSS -->
+    <link
+        rel="stylesheet"
+        href="profile.css"
+    >
+
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- Header -->
+
+        <header class="profile-header">
+
+            <div>
+
+                <span class="eyebrow">
+                    YOUR PROFILE
+                </span>
+
+                <h1>Profile</h1>
+
+            </div>
+
+            <button
+                class="settings-btn"
+                id="settingsBtn"
+                aria-label="Settings"
+            >
+                <i class="fa-solid fa-gear"></i>
+            </button>
+
+        </header>
+
+
+        <!-- Profile Card -->
+
+        <section class="profile-card">
+
+            <div class="profile-avatar">
+                A
+            </div>
+
+            <div class="profile-info">
+
+                <h2>Aira</h2>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Kerala, India
+                </p>
+
+                <span class="traveller-badge">
+                    <i class="fa-solid fa-plane"></i>
+                    Explorer
+                </span>
+
+            </div>
+
+            <button
+                class="edit-profile-btn"
+                id="editProfileBtn"
+            >
+                Edit
+            </button>
+
+        </section>
+
+
+        <!-- Travel Stats -->
+
+        <section class="stats-card">
+
+            <div class="stat">
+
+                <strong id="tripCount">
+                    0
+                </strong>
+
+                <span>
+                    Trips
+                </span>
+
+            </div>
+
+            <div class="stat-divider"></div>
+
+            <div class="stat">
+
+                <strong id="savedCount">
+                    0
+                </strong>
+
+                <span>
+                    Saved
+                </span>
+
+            </div>
+
+            <div class="stat-divider"></div>
+
+            <div class="stat">
+
+                <strong>
+                    0
+                </strong>
+
+                <span>
+                    Places
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- Preferences -->
+
+        <section class="profile-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        TRAVEL
+                    </span>
+
+                    <h2>Preferences</h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-card">
+
+                <button
+                    class="menu-item"
+                    id="travelStyleBtn"
+                >
+
+                    <div class="menu-icon blue">
+                        <i class="fa-solid fa-compass"></i>
+                    </div>
+
+                    <div class="menu-text">
+
+                        <strong>
+                            Travel style
+                        </strong>
+
+                        <span>
+                            Relaxed & adventurous
+                        </span>
+
+                    </div>
+
+                    <i class="fa-solid fa-chevron-right arrow"></i>
+
+                </button>
+
+
+                <button
+                    class="menu-item"
+                    id="travelPreferencesBtn"
+                >
+
+                    <div class="menu-icon purple">
+                        <i class="fa-solid fa-sliders"></i>
+                    </div>
+
+                    <div class="menu-text">
+
+                        <strong>
+                            Travel preferences
+                        </strong>
+
+                        <span>
+                            Set your interests
+                        </span>
+
+                    </div>
+
+                    <i class="fa-solid fa-chevron-right arrow"></i>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Account -->
+
+        <section class="profile-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        ACCOUNT
+                    </span>
+
+                    <h2>Account</h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-card">
+
+                <button
+                    class="menu-item"
+                    id="notificationsBtn"
+                >
+
+                    <div class="menu-icon orange">
+                        <i class="fa-regular fa-bell"></i>
+                    </div>
+
+                    <div class="menu-text">
+
+                        <strong>
+                            Notifications
+                        </strong>
+
+                        <span>
+                            Manage your alerts
+                        </span>
+
+                    </div>
+
+                    <i class="fa-solid fa-chevron-right arrow"></i>
+
+                </button>
+
+
+                <button
+                    class="menu-item"
+                    id="privacyBtn"
+                >
+
+                    <div class="menu-icon green">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+
+                    <div class="menu-text">
+
+                        <strong>
+                            Privacy & security
+                        </strong>
+
+                        <span>
+                            Control your account
+                        </span>
+
+                    </div>
+
+                    <i class="fa-solid fa-chevron-right arrow"></i>
+
+                </button>
+
+
+                <button
+                    class="menu-item"
+                    id="helpBtn"
+                >
+
+                    <div class="menu-icon gray">
+                        <i class="fa-regular fa-circle-question"></i>
+                    </div>
+
+                    <div class="menu-text">
+
+                        <strong>
+                            Help & support
+                        </strong>
+
+                        <span>
+                            Get help with Triply
+                        </span>
+
+                    </div>
+
+                    <i class="fa-solid fa-chevron-right arrow"></i>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Bottom Navigation -->
+
+    <nav class="bottom-nav">
+
+    <a href="index.html" class="nav-item">
+        <i class="fa-solid fa-house"></i>
+        <span>Home</span>
+    </a>
+
+    <a href="explore.html" class="nav-item">
+        <i class="fa-solid fa-compass"></i>
+        <span>Explore</span>
+    </a>
+
+    <a href="my-trips.html" class="nav-item">
+        <i class="fa-solid fa-suitcase-rolling"></i>
+        <span>Trips</span>
+    </a>
+
+    <a href="saved.html" class="nav-item">
+        <i class="fa-regular fa-heart"></i>
+        <span>Saved</span>
+    </a>
+
+    <a href="profile.html" class="nav-item active">
+        <i class="fa-solid fa-user"></i>
+        <span>Profile</span>
+    </a>
+
+</nav>
+
+    </div>
+
+
+    <!-- Profile JS -->
+
+    <script src="profile.js"></script>
+
+</body>
+
+</html>

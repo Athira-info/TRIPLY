@@ -1,0 +1,522 @@
+:root {
+    --navy: #0F172A;
+    --blue: #2563EB;
+    --ice-blue: #DBEAFE;
+    --background: #F8FAFC;
+    --white: #FFFFFF;
+    --gray: #64748B;
+    --light-gray: #94A3B8;
+    --border: #E2E8F0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #E2E8F0;
+    color: var(--navy);
+}
+
+button,
+input,
+textarea {
+    font-family: inherit;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 480px;
+    min-height: 100vh;
+
+    margin: auto;
+
+    background: var(--background);
+
+    position: relative;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.top-header {
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 20px;
+
+    background: var(--background);
+}
+
+.top-header h1 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.back-btn {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+    color: var(--navy);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.25s ease;
+}
+
+.back-btn:hover {
+    color: var(--blue);
+    background: var(--ice-blue);
+}
+
+.header-space {
+    width: 40px;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.content {
+    padding: 15px 20px 35px;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.intro {
+    margin-bottom: 28px;
+}
+
+.step-label {
+    display: inline-block;
+
+    color: var(--blue);
+
+    font-size: 9px;
+    font-weight: 800;
+
+    letter-spacing: 1.2px;
+
+    margin-bottom: 9px;
+}
+
+.intro h2 {
+    font-size: 25px;
+    line-height: 1.25;
+
+    max-width: 350px;
+
+    margin-bottom: 9px;
+}
+
+.intro p {
+    color: var(--gray);
+
+    font-size: 12px;
+    line-height: 1.6;
+
+    max-width: 360px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    margin-bottom: 8px;
+}
+
+.form-group label span {
+    color: var(--light-gray);
+
+    font-size: 10px;
+    font-weight: 400;
+
+    margin-left: 4px;
+}
+
+
+/* =========================
+   INPUT
+========================= */
+
+.input-box {
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 14px;
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+    border-radius: 13px;
+
+    transition: 0.25s ease;
+}
+
+.input-box:focus-within {
+    border-color: var(--blue);
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.08);
+}
+
+.input-box > i {
+    color: var(--gray);
+
+    font-size: 13px;
+
+    margin-right: 10px;
+}
+
+.input-box input {
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: var(--navy);
+
+    font-size: 12px;
+}
+
+.input-box input::placeholder {
+    color: var(--light-gray);
+}
+
+
+/* =========================
+   DATE ROW
+========================= */
+
+.date-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+}
+
+.date-row .input-box {
+    padding: 0 10px;
+}
+
+.date-row .input-box > i {
+    margin-right: 6px;
+    font-size: 11px;
+}
+
+.date-row input {
+    font-size: 10px;
+}
+
+
+/* =========================
+   TRAVELLERS
+========================= */
+
+.traveller-box {
+    min-height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 12px;
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+    border-radius: 13px;
+}
+
+.traveller-info {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.traveller-icon {
+    width: 36px;
+    height: 36px;
+
+    border-radius: 10px;
+
+    background: var(--ice-blue);
+
+    color: var(--blue);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 13px;
+}
+
+.traveller-info strong {
+    display: block;
+
+    font-size: 11px;
+
+    margin-bottom: 3px;
+}
+
+.traveller-info span {
+    display: block;
+
+    color: var(--gray);
+
+    font-size: 9px;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.counter button {
+    width: 28px;
+    height: 28px;
+
+    border-radius: 8px;
+
+    background: var(--background);
+
+    border: 1px solid var(--border);
+
+    color: var(--navy);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.counter button:hover {
+    background: var(--ice-blue);
+    color: var(--blue);
+}
+
+.counter button i {
+    font-size: 9px;
+}
+
+.counter span {
+    width: 20px;
+
+    text-align: center;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+/* =========================
+   TRAVEL STYLE
+========================= */
+
+.style-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 9px;
+}
+
+.style-option {
+    height: 65px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 0 13px;
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+    border-radius: 12px;
+
+    color: var(--gray);
+
+    transition: 0.25s ease;
+}
+
+.style-option i {
+    width: 30px;
+    height: 30px;
+
+    border-radius: 8px;
+
+    background: var(--background);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 12px;
+}
+
+.style-option span {
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.style-option:hover {
+    border-color: var(--blue);
+}
+
+.style-option.active {
+    background: var(--ice-blue);
+
+    border-color: var(--blue);
+
+    color: var(--blue);
+}
+
+.style-option.active i {
+    background: var(--white);
+
+    color: var(--blue);
+}
+
+
+/* =========================
+   TEXTAREA
+========================= */
+
+textarea {
+    width: 100%;
+
+    min-height: 90px;
+
+    resize: vertical;
+
+    padding: 13px;
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+    border-radius: 13px;
+
+    outline: none;
+
+    color: var(--navy);
+
+    font-size: 11px;
+
+    line-height: 1.5;
+
+    transition: 0.25s ease;
+}
+
+textarea:focus {
+    border-color: var(--blue);
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.08);
+}
+
+textarea::placeholder {
+    color: var(--light-gray);
+}
+
+
+/* =========================
+   CREATE BUTTON
+========================= */
+
+.create-btn {
+    width: 100%;
+
+    height: 52px;
+
+    margin-top: 5px;
+
+    border-radius: 14px;
+
+    background: var(--blue);
+
+    color: var(--white);
+
+    font-size: 13px;
+    font-weight: 700;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    transition: 0.25s ease;
+}
+
+.create-btn:hover {
+    background: #1D4ED8;
+
+    transform: translateY(-1px);
+}
+
+.create-btn i {
+    font-size: 11px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (min-width: 600px) {
+
+    .app-container {
+        box-shadow:
+            0 0 40px rgba(15, 23, 42, 0.08);
+    }
+
+}

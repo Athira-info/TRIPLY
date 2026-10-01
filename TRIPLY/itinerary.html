@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Triply - Itinerary</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="itinerary.css">
+
+</head>
+
+
+<body>
+
+
+<div class="app-container">
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="top-header">
+
+        <button
+            class="back-btn"
+            id="backBtn"
+        >
+
+            <i class="fa-solid fa-arrow-left"></i>
+
+        </button>
+
+
+        <h1>Itinerary</h1>
+
+
+        <button
+            class="more-btn"
+            id="moreBtn"
+        >
+
+            <i class="fa-solid fa-ellipsis"></i>
+
+        </button>
+
+    </header>
+
+
+
+    <!-- =========================
+         TRIP HERO
+    ========================== -->
+
+    <section class="trip-hero">
+
+        <div class="hero-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=1000&q=85"
+                alt="Munnar"
+            >
+
+            <div class="hero-overlay"></div>
+
+
+            <div class="hero-content">
+
+                <span>
+                    YOUR TRIP
+                </span>
+
+                <h2 id="tripTitle">
+                    Munnar Escape
+                </h2>
+
+                <div class="trip-location">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <span id="tripDestination">
+                        Munnar, Kerala
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         TRIP INFO
+    ========================== -->
+
+    <section class="trip-info">
+
+        <div class="info-item">
+
+            <div class="info-icon">
+
+                <i class="fa-regular fa-calendar"></i>
+
+            </div>
+
+            <div>
+
+                <span>Dates</span>
+
+                <strong id="tripDates">
+                    3 days
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="info-item">
+
+            <div class="info-icon">
+
+                <i class="fa-solid fa-user-group"></i>
+
+            </div>
+
+            <div>
+
+                <span>Travellers</span>
+
+                <strong id="tripTravellers">
+                    2 people
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="info-item">
+
+            <div class="info-icon">
+
+                <i class="fa-solid fa-compass"></i>
+
+            </div>
+
+            <div>
+
+                <span>Style</span>
+
+                <strong id="tripStyle">
+                    Relaxed
+                </strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         ITINERARY
+    ========================== -->
+
+    <main class="content">
+
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="small-label">
+                    YOUR PLAN
+                </span>
+
+                <h2>Day by day</h2>
+
+            </div>
+
+
+            <button
+                class="edit-btn"
+                id="editBtn"
+            >
+
+                <i class="fa-solid fa-pen"></i>
+
+                Edit
+
+            </button>
+
+        </div>
+
+
+
+        <!-- DAY TABS -->
+
+        <div class="day-tabs">
+
+            <button
+                class="day-tab active"
+                data-day="1"
+            >
+
+                <span>DAY</span>
+
+                <strong>01</strong>
+
+            </button>
+
+
+            <button
+                class="day-tab"
+                data-day="2"
+            >
+
+                <span>DAY</span>
+
+                <strong>02</strong>
+
+            </button>
+
+
+            <button
+                class="day-tab"
+                data-day="3"
+            >
+
+                <span>DAY</span>
+
+                <strong>03</strong>
+
+            </button>
+
+        </div>
+
+
+
+        <!-- DAY CONTENT -->
+
+        <section
+            class="day-content"
+            id="dayContent"
+        >
+
+            <!-- JavaScript content -->
+
+        </section>
+
+
+
+        <!-- ADD ACTIVITY -->
+
+        <button
+            class="add-activity"
+            id="addActivity"
+        >
+
+            <span class="add-icon">
+
+                <i class="fa-solid fa-plus"></i>
+
+            </span>
+
+            <span>
+
+                <strong>Add activity</strong>
+
+                <small>
+                    Add a place, experience or meal
+                </small>
+
+            </span>
+
+        </button>
+
+
+    </main>
+
+
+
+    <!-- =========================
+         BOTTOM ACTION
+    ========================== -->
+
+    <div class="bottom-action">
+
+        <button
+            class="share-btn"
+            id="shareBtn"
+        >
+
+            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+
+        </button>
+
+
+        <button
+            class="done-btn"
+            id="doneBtn"
+        >
+
+            View my trips
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </button>
+
+    </div>
+
+
+</div>
+
+
+<script src="itinerary.js"></script>
+
+</body>
+
+</html>
